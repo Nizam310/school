@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         title: GetBuilder<ProfileController>(builder: (context) {
-          return Text('Home'.tr);
+          return Text('Home'.tr,style: const TextStyle(color: Colors.white),);
         }),
       ),
       body: GetBuilder<ProfileController>(builder: (controller) {
@@ -333,8 +333,7 @@ class _CusCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      radius: 0.0,
+    return GestureDetector(
       onTap: onTap,
       child: Container(
         height: 200,

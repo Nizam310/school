@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:school/controller/home_controller.dart';
 import 'package:school/controller/profile_controller.dart';
-import 'package:school/util/custom_widgets/cus_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../util/color.dart';
@@ -25,7 +23,7 @@ class _SettingsState extends State<Settings> {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.transparent,
-        title: Text('settings'.tr),
+        title: Text('settings'.tr,style: const TextStyle(color: Colors.white),),
       ),
       body: ListView(
         padding: const EdgeInsets.all(10),

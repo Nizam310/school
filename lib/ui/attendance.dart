@@ -36,7 +36,7 @@ class _AttendanceState extends State<Attendance> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        title: Text('Attendance'.tr),
+        title: Text('Attendance'.tr,style: const TextStyle(color: Colors.white)),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),

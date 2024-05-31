@@ -34,7 +34,7 @@ class _ProfileState extends State<Profile> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         title: Obx(() =>
-            Text(controller.enable.value == false ? "Profile".tr : 'edit'.tr)),
+            Text(controller.enable.value == false ? "Profile".tr : 'edit'.tr,style: const TextStyle(color: Colors.white),)),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
